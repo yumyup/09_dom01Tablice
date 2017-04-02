@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Tab {
     public static void main(String[] args) {
 
-
+        double sum = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("ile liczb chcesz wprowadzić?");
         int number = scanner.nextInt();
@@ -13,11 +13,15 @@ public class Tab {
             double a = scanner.nextDouble();
             scanner.nextLine();
             tab[i] = a;
-            double sum = a + a;
+            sum = sum + a;
         }
         scanner.close();
-        System.out.println(sum);
+        System.out.println("suma liczb w tablicy"+ sum);
+        System.out.println("wielkość tablicy"+ tab.length);
+   //     System.out.println(tab[i]); jak wypisać zawarte liczby w tablicy?
+
     }
+
 }
 
 
